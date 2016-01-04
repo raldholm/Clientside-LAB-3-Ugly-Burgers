@@ -16,13 +16,13 @@ request.onreadystatechange = function () {
 
     if (request.readyState === 4 && request.status === 200) {
 
-        alert("READY STATUS = 200");
+        alert("READY STATUS = FILE OPEN");
 
         var jsonObjectet = JSON.parse(request.responseText);
 
         var output = "<ul>";
 
-        for (var i = 0; i < jsonObjectet.fathers.length; i++) {
+        for (var i = 0; i < jsonObjectet.length; i++) {
 
             output += "<li>" +
                 jsonObjectet.fathers[i].id + " : " +

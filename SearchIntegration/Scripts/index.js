@@ -6,12 +6,12 @@ if (window.XMLHttpRequest) {
 } else {
     request = new ActiveXObject("MicrosoftXMLHTTP");
 }
-request.open('GET', 'Products.json', true);
+request.open("GET", "Scripts/products.json", true);
 
 request.onreadystatechange = function () {
 
     if (request.readyState === 3) {
-        alert("Hittar inte filen");
+        
     }
 
     if (request.readyState === 4 && request.status === 200) {
@@ -22,7 +22,7 @@ request.onreadystatechange = function () {
 
         var output = "<ul>";
 
-        for (var i = 0; i < jsonObjectet.fathers.length; i++) {
+        for (var i = 0; i < jsonObjectet.length; i++) {
 
             output += "<li>" +
                 jsonObjectet.fathers[i].id + " : " +

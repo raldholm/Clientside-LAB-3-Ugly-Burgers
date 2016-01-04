@@ -1,0 +1,209 @@
+﻿{
+  "hamburgers": [
+    {
+      "id": 0,
+      "name": "Kalles S Burger",
+      "size": "200g",
+      "dayOfTheWeek": "Monday",
+      "price": 19.90
+    },
+    {
+      "id": 1,
+      "name": "Skinny Burger",
+      "size": "90g",
+      "dayOfTheWeek": "Tuesday",
+      "price": 19.90
+    },
+    {
+      "id": 2,
+      "name": "Elmaco Burger",
+      "size": "150g",
+      "dayOfTheWeek": "Wednesday",
+      "price": 19.90
+    },
+    {
+      "id": 3,
+      "name": "BigKingXXL Burger",
+      "size": "300g",
+      "dayOfTheWeek": "Thursday",
+      "price": 19.90
+    },
+    {
+      "id": 4,
+      "name": "Winnare Burger",
+      "size": "300g",
+      "dayOfTheWeek": "Friday",
+      "price": 19.90
+    },
+    {
+      "id": 5,
+      "name": "Shitty Burger",
+      "size": "300g",
+      "dayOfTheWeek": "Saturday",
+      "price": 19.90
+    },
+    {
+      "id": 6,
+      "name": "Fatty burger",
+      "size": "800g",
+      "dayOfTheWeek": "Sunday",
+      "price": 19.90
+    }
+  ],
+  "Pizzas": [
+    {
+      "id": 7,
+      "name": "Kalles S Burger",
+      "size": "200g",
+      "dayOfTheWeek": "Monday",
+      "price": 19.90
+    },
+    {
+      "id": 8,
+      "name": "Kalles S Burger",
+      "size": "200g",
+      "dayOfTheWeek": "Monday",
+      "price": 19.90
+    },
+    {
+      "id": 9,
+      "name": "Kalles S Burger",
+      "size": "200g",
+      "dayOfTheWeek": "Monday",
+      "price": 19.90
+    },
+    {
+      "id": 20,
+      "name": "Kalles S Burger",
+      "size": "200g",
+      "dayOfTheWeek": "Monday",
+      "price": 19.90
+    },
+    {
+      "id": 11,
+      "name": "Kalles S Burger",
+      "size": "200g",
+      "dayOfTheWeek": "Monday",
+      "price": 19.90
+    },
+    {
+      "id": 12,
+      "name": "Skinny Burger",
+      "size": "90g",
+      "dayOfTheWeek": "Tuesday",
+      "price": 19.90
+    },
+    {
+      "id": 13,
+      "name": "Fatty burger",
+      "size": "800g",
+      "dayOfTheWeek": "Sunday",
+      "price": 19.90
+    }
+  ],
+  "Subs": [
+    {
+      "id": 14,
+      "name": "Fatty burger",
+      "size": "800g",
+      "dayOfTheWeek": "Sunday",
+      "price": 19.90
+    },
+    {
+      "id": 15,
+      "name": "Fatty burger",
+      "size": "800g",
+      "dayOfTheWeek": "Sunday",
+      "price": 19.90
+    },
+    {
+      "id": 17,
+      "name": "Fatty burger",
+      "size": "800g",
+      "dayOfTheWeek": "Sunday",
+      "price": 19.90
+    },
+    {
+      "id": 18,
+      "name": "Fatty burger",
+      "size": "800g",
+      "dayOfTheWeek": "Sunday",
+      "price": 19.90
+    },
+    {
+      "id": 19,
+      "name": "Fatty burger",
+      "size": "800g",
+      "dayOfTheWeek": "Sunday",
+      "price": 19.90
+    },
+    {
+      "id": 20,
+      "name": "Fatty burger",
+      "size": "800g",
+      "dayOfTheWeek": "Sunday",
+      "price": 19.90
+    },
+    {
+      "id": 21,
+      "name": "Fatty burger",
+      "size": "800g",
+      "dayOfTheWeek": "Sunday",
+      "price": 19.90
+    }
+  ],
+  "Drinks": [
+    {
+      "id": 22,
+      "name": "Fatty burger",
+      "size": "800g",
+      "dayOfTheWeek": "Sunday",
+      "price": 19.90
+    },
+    {
+      "id": 23,
+      "name": "Fatty burger",
+      "size": "800g",
+      "dayOfTheWeek": "Sunday",
+      "price": 19.90
+    },
+    {
+      "id": 24,
+      "name": "Fatty burger",
+      "size": "800g",
+      "dayOfTheWeek": "Sunday",
+      "price": 19.90
+    },
+    {
+      "id": 25,
+      "name": "Fatty burger",
+      "size": "800g",
+      "dayOfTheWeek": "Sunday",
+      "price": 19.90
+    },
+    {
+      "id": 26,
+      "name": "Fatty burger",
+      "size": "800g",
+      "dayOfTheWeek": "Sunday",
+      "price": 19.90
+    },
+    {
+      "id": 27,
+      "name": "Fatty burger",
+      "size": "800g",
+      "dayOfTheWeek": "Sunday",
+      "price": 19.90
+    },
+    {
+      "id": 28,
+      "name": "Fatty burger",
+      "size": "800g",
+      "dayOfTheWeek": "Sunday",
+      "price": 19.90
+    }
+  ]
+}
+
+
+
