@@ -1,0 +1,56 @@
+﻿{
+  "Hamburgers": [
+    {
+      "id": 0,
+      "name": "Kalles S Burger",
+      "size": "200g",
+      "dayOfTheWeek": "Monday",
+      "price": 19.90
+    },
+    {
+      "id": 1,
+      "name": "Skinny Burger",
+      "size": "90g",
+      "dayOfTheWeek": "Tuesday",
+      "price": 19.90
+    },
+    {
+      "id": 2,
+      "name": "Elmaco Burger",
+      "size": "150g",
+      "dayOfTheWeek": "Wednesday",
+      "price": 19.90
+    },
+    {
+      "id": 3,
+      "name": "BigKingXXL Burger",
+      "size": "300g",
+      "dayOfTheWeek": "Thursday",
+      "price": 19.90
+    },
+    {
+      "id": 4,
+      "name": "Winnare Burger",
+      "size": "300g",
+      "dayOfTheWeek": "Friday",
+      "price": 19.90
+    },
+    {
+      "id": 5,
+      "name": "Shitty Burger",
+      "size": "300g",
+      "dayOfTheWeek": "Saturday",
+      "price": 19.90
+    },
+    {
+      "id": 6,
+      "name": "Fatty burger",
+      "size": "800g",
+      "dayOfTheWeek": "Sunday",
+      "price": 19.90
+    }
+  ]
+}
+
+
+

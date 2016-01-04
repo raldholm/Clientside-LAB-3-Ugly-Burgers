@@ -1,0 +1,22 @@
+﻿body {
+}
+#makeMeAnArray {
+    background-color: hotpink;
+}
+.buttonFunction {
+    font-size: 1.1rem;
+    background-color: darkgreen;
+    color: whitesmoke;
+    display: inline-block;
+    padding: 5px;
+      -ms-border-radius: 20px;
+    border-radius: 20px;
+    width: 15%; 
+    text-align: center;
+    margin: 5px;
+    
+}
+.buttonFunction:hover {
+    background-color: green;
+     text-decoration: underline;
+}

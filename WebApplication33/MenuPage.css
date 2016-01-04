@@ -1,0 +1,59 @@
+﻿body {
+    background-color: #b8860b;
+    font-family: Algerian;
+}
+fieldset {
+    width: 12%;
+    height: 20%;
+    float: left;
+}
+
+img {
+    width: 60px;
+}
+h1, h2 {
+    margin: 20px auto;
+    padding: 10px;   
+    width: 30%;
+    border: 2px solid white;
+    border-radius: 10px 0 10px 0;
+        text-align: center;
+}
+h3 {
+    font-size: .7rem;
+}
+article, .price{
+    background-color: #dcdcdc;
+    margin: 0 auto;
+}
+.price {
+     -ms-border-radius: 20px;
+    border-radius: 20px;
+    width: 60%; 
+    text-align: center;
+}
+
+fieldset {
+    background-color: lightblue;
+    text-decoration: underline;
+}
+
+legend {
+    border: 2px solid white;
+    padding: 10px;
+    font-weight: bold;
+    background-color: brown;
+    width: 90px;
+    -ms-border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h3 {
+    color: #00008b;
+    font-family: Algerian;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
