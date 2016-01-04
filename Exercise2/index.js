@@ -16,7 +16,7 @@ request.onreadystatechange = function () {
 
     if (request.readyState === 4 && request.status === 200) {
 
-        alert("READY STATUS = FILE OPEN");
+        alert("READY STATUS = OK - FILE OPEN");
 
         var jsonObjectet = JSON.parse(request.responseText);
 

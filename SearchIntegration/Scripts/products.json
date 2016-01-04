@@ -50,7 +50,7 @@
       "price": 19.90
     }
   ],
-  "Pizzas": [
+  "pizzas": [
     {
       "id": 7,
       "name": "Kalles S Burger",
@@ -101,7 +101,7 @@
       "price": 19.90
     }
   ],
-  "Subs": [
+  "subs": [
     {
       "id": 14,
       "name": "Fatty burger",
@@ -152,7 +152,7 @@
       "price": 19.90
     }
   ],
-  "Drinks": [
+  "drinks": [
     {
       "id": 22,
       "name": "Fatty burger",

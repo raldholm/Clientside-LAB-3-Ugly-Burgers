@@ -16,22 +16,21 @@ request.onreadystatechange = function () {
 
     if (request.readyState === 4 && request.status === 200) {
 
-        alert("READY STATUS = 200");
+        alert("FILE OPENED!");
 
         var jsonObjectet = JSON.parse(request.responseText);
 
         var output = "<ul>";
 
-        for (var i = 0; i < jsonObjectet.length; i++) {
+        for (var i = 0; i < jsonObjectet.hamburgers.length; i++) {
 
-            output += "<li>" +
-                jsonObjectet.fathers[i].id + " : " +
-                jsonObjectet.fathers[i].name + "</li>";
-
+            output += "<li>" + jsonObjectet.hamburgers[i].name + "</li>";
 
         }
         output += "</ul>";
-        document.getElementById("result").innerHTML = output;
+
+        document.getElementById("burgersPlace").innerHTML = output;
+        
     }
 }
 
