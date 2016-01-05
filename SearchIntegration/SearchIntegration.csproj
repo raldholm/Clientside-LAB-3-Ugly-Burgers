@@ -101,7 +101,7 @@
     </Content>
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="Scripts\jquery-2.1.0.min.map" />
-    <Content Include="Scripts\products.json" />
+    <Content Include="products.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\Drink.png" />

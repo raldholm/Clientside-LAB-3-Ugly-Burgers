@@ -1,37 +1,35 @@
-﻿
-var request;
+﻿$(document).ready(function () {
 
-if (window.XMLHttpRequest) {
-    request = new XMLHttpRequest();
-} else {
-    request = new ActiveXObject("MicrosoftXMLHTTP");
-}
-request.open("GET", "Scripts/products.json", true);
+    var burgers = $("#burgersPlace").val();
 
-request.onreadystatechange = function () {
+    var meExp = new RegExp(burgers, "i");
 
-    if (request.readyState === 3) {
-        
-    }
-
-    if (request.readyState === 4 && request.status === 200) {
-
-        alert("FILE OPENED!");
-
-        var jsonObjectet = JSON.parse(request.responseText);
+    $.getJSON('products.json', function(data) {
 
         var output = "<ul>";
 
-        for (var i = 0; i < jsonObjectet.hamburgers.length; i++) {
+        //$.for()
 
-            output += "<li>" + jsonObjectet.hamburgers[i].name + "</li>";
+        $.each(data, function (key, val) {
 
-        }
+            alert(val.toArray);
+
+            //Sortering
+            if ((val.name.search(meExp) !== -1)) {
+                alert("hej");
+                output += "<li>";
+                output += "<p>" + val.name + "<b> " + val.name + "</b>" + "</p>";
+                output += "<p>" + val.id + "</p>";
+                output += "</li>";
+            }
+
+        });
         output += "</ul>";
 
-        document.getElementById("burgersPlace").innerHTML = output;
-        
-    }
-}
+        $("#burgersPlace").html(output);
+    });
 
-request.send();
+});
+
+
+
