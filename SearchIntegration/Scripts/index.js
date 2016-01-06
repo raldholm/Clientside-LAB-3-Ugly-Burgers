@@ -1,31 +1,83 @@
 ﻿$(document).ready(function () {
 
     function getHamburgersFunction() {
-        var burgers = $("#burgersPlace").val();
-        var meExp = new RegExp(burgers, "i");
+
         $.getJSON('hamburgers.json', function (data) {
-            var output = "<ul>";
+            var html = "";
             $.each(data, function (key, val) {
-                //Sortering
-                if ((val.name.search(meExp) !== -1)) {
-                    output += "<li>";
-                    output += "<p>" + "<b>" + val.name + "</b>" + "</p>";
-                    output += "<p>" + val.description + "</p>";
-                    output += "<p>" + "<b>" + "Size: " + "</b>" + val.size + "</p>";
-                    output += "<p>" + "<b>" + "Day of the week: " + "</b>" + val.dayOfTheWeek + "</p>";
-                    output += "<p>" + "<b>" + "Price: " + "</b>" + "$ " + val.price + "</p>";
-                    output += "</li>";
-                }
+                html += "<article>";
+                html += "<fieldset>";
+                html += "<legend>" + val.name +  "</legend>";
+                html += "<h3>" + val.dayOfTheWeek + "'s Special!" + "</h3>";
+                html += "<span>"+ "<img src="+'Images/Hamburger.png' +"></span>";
+                html += "<div id='description'>" + val.description + "</div>";
+                html += "<div class='price'>" + val.price + "</div>";
+                html += "</fieldset>";
+                html += "</article>";
             });
-            output += "</ul>";
-            $("#burgersPlace").html(output);
+            html += "";
+            $("#burgersPlace").html(html);
+        });
+    };
+    function getPizzasFunction() {
+        $.getJSON('pizzas.json', function (data) {
+            var html = "";
+            $.each(data, function (key, val) {
+                html += "<article>";
+                html += "<fieldset>";
+                html += "<legend>" + val.name + "</legend>";
+                html += "<h3>" + val.dayOfTheWeek + "'s Special!" + "</h3>";
+                html += "<span>" + "<img src=" + 'Images/Pizza.png' + "></span>";
+                //html += "<div id='description'>" + val.description + "</div>";
+                html += "<div class='price'>" + val.price + "</div>";
+                html += "</fieldset>";
+                html += "</article>";
+            });
+            html += "";
+            $("#pizzaPlace").html(html);
+        });
+    };
+    function getSubsFunction()
+    {
+        $.getJSON('subs.json', function (data) {
+            var html = "";
+            $.each(data, function (key, val) {
+                html += "<article>";
+                html += "<fieldset>";
+                html += "<legend>" + val.name + "</legend>";
+                html += "<h3>" + val.dayOfTheWeek + "'s Special!" + "</h3>";
+                html += "<span>" + "<img src=" + 'Images/Subs.png' + "></span>";
+                //html += "<div id='description'>" + val.description + "</div>";
+                html += "<div class='price'>" + val.price + "</div>";
+                html += "</fieldset>";
+                html += "</article>";
+            });
+            html += "";
+            $("#subsPlace").html(html);
+        });
+    };
+    function getDrinksFunction() {
+        $.getJSON('drinks.json', function (data) {
+            var html = "";
+            $.each(data, function (key, val) {
+                html += "<article>";
+                html += "<fieldset>";
+                html += "<legend>" + val.name + "</legend>";
+                html += "<h3>" + val.dayOfTheWeek + "'s Special!" + "</h3>";
+                html += "<span>" + "<img src=" + 'Images/Drink.png' + "></span>";
+                //html += "<div id='description'>" + val.description + "</div>";
+                html += "<div class='price'>" + val.price + "</div>";
+                html += "</fieldset>";
+                html += "</article>";
+            });
+            html += "";
+            $("#drinksPlace").html(html);
         });
     };
 
-    //getHamburgersFunction();
-
+    getHamburgersFunction();
+    getPizzasFunction();
+    getSubsFunction();
+    getDrinksFunction();
 
 });
-
-
-

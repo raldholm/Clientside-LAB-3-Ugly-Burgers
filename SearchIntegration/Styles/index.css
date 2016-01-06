@@ -1,5 +1,5 @@
 ﻿body {
-    background-color: #b8860b;
+    background-color: lightskyblue;
     font-family: Algerian;
 }
 fieldset {
@@ -83,4 +83,24 @@ h3 {
     -ms-transform: rotate(-10deg);
     -o-transform: rotate(-10deg);
     transform: rotate(-10deg);
+}
+
+
+#searchArea
+{
+    
+    font-family: Verdana;
+    padding-left: 200px;
+    width: 600px;
+}
+#description
+{
+    font-family: verdana;
+    font-size: 0.8rem;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+#foodProducts
+{
+    margin-top: 30px;
 }
