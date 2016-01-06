@@ -1,0 +1,56 @@
+﻿[
+    {
+      "id": 0,
+      "name": "Chicken Sub",
+      "size": "220g",
+      "dayOfTheWeek": "Monday",
+      "price": 19.90
+    },
+    {
+      "id": 1,
+      "name": "Mexican Sub",
+      "size": "220g",
+      "dayOfTheWeek": "Tuesday",
+      "price": 19.90
+    },
+    {
+      "id": 2,
+      "name": "Italian Sub",
+      "size": "220g",
+      "dayOfTheWeek": "Wednesday",
+      "price": 19.90
+    },
+    {
+      "id": 3,
+      "name": "Ham & Cheese Sub",
+      "size": "220g",
+      "dayOfTheWeek": "Thursday",
+      "price": 19.90
+    },
+    {
+      "id": 4,
+      "name": "Vegeterian Sub",
+      "size": "200g",
+      "dayOfTheWeek": "Friday",
+      "price": 19.90
+    },
+    {
+      "id": 5,
+      "name": "Kebab Sub",
+      "size": "220g",
+      "dayOfTheWeek": "Saturday",
+      "price": 19.90
+    },
+    {
+      "id": 6,
+      "name": "LCHF sub",
+      "size": "220g",
+      "dayOfTheWeek": "Sunday",
+      "price": 19.90
+    }
+  ]
+ 
+
+
+
+}

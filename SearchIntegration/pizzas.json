@@ -1,0 +1,51 @@
+﻿[
+  {
+    "id": 0,
+    "name": "Hawaii",
+    "size": "400g",
+    "dayOfTheWeek": "Monday",
+    "price": 19.90
+  },
+  {
+    "id": 1,
+    "name": "Calzone",
+    "size": "400g",
+    "dayOfTheWeek": "Tuesday",
+    "price": 19.90
+  },
+  {
+    "id": 2,
+    "name": "Margarita",
+    "size": "400g",
+    "dayOfTheWeek": "Wednesday",
+    "price": 19.90
+  },
+  {
+    "id": 3,
+    "name": "Caprisiossa",
+    "size": "400g",
+    "dayOfTheWeek": "Thursday",
+    "price": 19.90
+  },
+  {
+    "id": 4,
+    "name": "Kebab pizza",
+    "size": "400g",
+    "dayOfTheWeek": "Friday",
+    "price": 19.90
+  },
+  {
+    "id": 5,
+    "name": "Olympia Special",
+    "size": "520g",
+    "dayOfTheWeek": "Saturay",
+    "price": 21.90
+  },
+  {
+    "id": 6,
+    "name": "House Pizza",
+    "size": "500g",
+    "dayOfTheWeek": "Sunday",
+    "price": 20.90
+  }
+]

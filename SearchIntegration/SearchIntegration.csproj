@@ -101,7 +101,7 @@
     </Content>
     <Content Include="Service References\Application Insights\ConnectedService.json" />
     <Content Include="Scripts\jquery-2.1.0.min.map" />
-    <Content Include="products.json" />
+    <Content Include="hamburgers.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\Drink.png" />
@@ -113,11 +113,14 @@
     <Content Include="Scripts\index.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.js" />
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
+    <Content Include="pizzas.json" />
+    <Content Include="drinks.json" />
     <None Include="Scripts\jquery-2.1.0.intellisense.js" />
     <None Include="Scripts\jquery-2.1.0-vsdoc.js" />
     <Content Include="Scripts\jquery-2.1.0.js" />
     <Content Include="Scripts\jquery-2.1.0.min.js" />
     <Content Include="Web.config" />
+    <Content Include="subs.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

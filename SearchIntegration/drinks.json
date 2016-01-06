@@ -1,0 +1,51 @@
+﻿[
+  {
+    "id": 0,
+    "name": "Beer",
+    "size": "50cl",
+    "dayOfTheWeek": "Monday",
+    "price": 9.90
+  },
+  {
+    "id": 1,
+    "name": "White wine",
+    "size": "25cl",
+    "dayOfTheWeek": "Tuesday",
+    "price": 11.90
+  },
+  {
+    "id": 2,
+    "name": "Red wine",
+    "size": "25cl",
+    "dayOfTheWeek": "Wednesday",
+    "price": 11.90
+  },
+  {
+    "id": 3,
+    "name": "Tequila shot",
+    "size": "6cl",
+    "dayOfTheWeek": "Thursday",
+    "price": 4.90
+  },
+  {
+    "id": 4,
+    "name": "Whiskey",
+    "size": "12cl",
+    "dayOfTheWeek": "Friday",
+    "price": 13.90
+  },
+  {
+    "id": 5,
+    "name": "Bottled Water",
+    "size": "50cl",
+    "dayOfTheWeek": "Saturay",
+    "price": 1.90
+  },
+  {
+    "id": 6,
+    "name": "Glas of milk",
+    "size": "40cl",
+    "dayOfTheWeek": "Sunday",
+    "price": 2.90
+  }
+]
