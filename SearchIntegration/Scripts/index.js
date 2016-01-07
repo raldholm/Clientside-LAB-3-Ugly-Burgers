@@ -8,12 +8,9 @@
 
 $(document).ready(function () {
 
-    $('#checkbox_hamburgers').click(function () {
-        if (!$(this).is(':checked')) {
-
-            $("#hamBurgersDiv").addClass('hidden');
-        }     
-    });
+    //$('#checkbox_pizzas').bind('click').click(function () {
+       
+    //});
 
     if ($('#checkbox_hamburgers').is(':checked')) {
         getAllHamburgers();
