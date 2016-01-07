@@ -6,18 +6,32 @@
     <script src="Scripts/index.js"></script>
 </head>
 <body>
-    <div id="searchArea">
-        <p>Search for food or drinks here.</p>
-        <label for="search">Please enter desired food or drink:</label>
-        <input type="search" name="search" id="search" placeholder="Feed me!" />
-        <div id="update"></div>
-    </div>
+<div id="searchArea">
+    <p>Search for food or drinks here.</p>
+    <label for="search">Please enter desired food or drink:</label>
+    <input type="search" name="search" id="search" placeholder="Feed me!"/>
+    <div id="update"></div>
+</div>
+<div id="checkBoxs">
+    <h2>Menu</h2>
+    <label for="checkbox_hamburgers">Hamburgers:</label>
+    <input type="checkbox" name="checkbox_hamburgers" id="checkbox_hamburgers" checked><br>
+
+    <label for="checkbox_subs">Subs:</label>
+    <input type="checkbox" name="checkbox_subs" id="checkbox_subs" checked><br>
+
+    <label for="checkbox_pizzas">Pizzas:</label>
+    <input type="checkbox" name="checkbox_pizzas" id="checkbox_pizzas" checked><br>
+
+    <label for="checkbox_drinks">Drinks:</label>
+    <input type="checkbox" name="checkbox_drinks" id="checkbox_drinks" checked><br>
+</div>
 
 <div id="foodProducts">  
-    <div id="burgersPlace"></div>
-    <div id="subsPlace"></div>
-    <div id="pizzaPlace"></div>
-    <div id="drinksPlace"></div>
+    <div id="hamBurgersDiv"></div>
+    <div id="subsDiv"></div>
+    <div id="pizzasDiv"></div>
+    <div id="drinksDiv"></div>
 </div>
 </body>
 </html>

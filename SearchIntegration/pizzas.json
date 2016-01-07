@@ -3,49 +3,49 @@
     "id": 0,
     "name": "Hawaii",
     "size": "400g",
-    "dayOfTheWeek": "Monday",
+    "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
     "price": 19.90
   },
   {
     "id": 1,
     "name": "Calzone",
     "size": "400g",
-    "dayOfTheWeek": "Tuesday",
+    "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
     "price": 19.90
   },
   {
     "id": 2,
     "name": "Margarita",
     "size": "400g",
-    "dayOfTheWeek": "Wednesday",
+    "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
     "price": 19.90
   },
   {
     "id": 3,
     "name": "Caprisiossa",
     "size": "400g",
-    "dayOfTheWeek": "Thursday",
+    "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
     "price": 19.90
   },
   {
     "id": 4,
     "name": "Kebab pizza",
     "size": "400g",
-    "dayOfTheWeek": "Friday",
+    "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
     "price": 19.90
   },
   {
     "id": 5,
     "name": "Olympia Special",
     "size": "520g",
-    "dayOfTheWeek": "Saturay",
+    "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
     "price": 21.90
   },
   {
     "id": 6,
     "name": "House Pizza",
     "size": "500g",
-    "dayOfTheWeek": "Sunday",
+    "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
     "price": 20.90
   }
 ]
