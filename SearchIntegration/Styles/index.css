@@ -1,70 +1,110 @@
 ﻿body {
     background-color: lightskyblue;
+    font-family: verdana;
 }
 
 img {
     width: 50px;
 }
-#Menu {
-    
-}
-#searchArea
-{
+
+#checkBoxs {
+    width: 150px;
+    /*margin-left: 40%;*/
+    text-align: center;
+    height: auto;
     background-color: burlywood;
-    width: 300px;
+    border-radius: 1.5em;
+    padding: 2px;
+    margin-bottom: 15px;
+    margin-left: 10px;
 }
-#checkBoxs
-{
-    width: 300px;
+
+#searchArea {
+    width: 150px;
     background-color: burlywood;
+    width: 350px;
+    height: 100px;
+    /*margin-left: 40%;*/
+    text-align: center;
+    border-radius: 1.5em;
+    padding: 1px;
+    margin-bottom: 15px;
 }
-#hamburger
-{
-    background-color: lightsalmon;
+
+#searchResults {
+    width: 1600px;
     border-radius: 2.5em;
-    padding: 15px;
+    height: 200px;
     border: 3px solid white;
-    margin: 30px auto;
-    width: 90%;
-    text-align: center;
-    height: 240px;
-   
+    background-color: lightyellow;
 }
-#sub
-{
-    background-color: lightgreen;
-      border-radius: 2.5em;
-    padding: 15px;
-    border: 3px solid white;
-    margin: 30px auto;
-    width: 90%;
-    text-align: center;
-    height: 240px;
-}
-#pizza
-{
+
+#searchedItem {
     background-color: lightblue;
-      border-radius: 2.5em;
-    padding: 15px;
+    border: 3px solid white;
+    border-radius: 2.5em;
+    font-size: 0.5rem;
+    width: 150px;
+    padding: 4px;
+    height: auto;
+    padding: 5px;
+    float: left;
+    margin: 5px;
+}
+
+#hamburger {
+    background-color: lightsalmon;
+    font-size: 0.6rem;
+    border-radius: 2.5em;
+    padding: 4px;
     border: 3px solid white;
     margin: 30px auto;
-    width: 90%;
+    width: 200px;
     text-align: center;
-    height: 240px;
+    height: auto;
 }
-#drink
-{
+
+#sub {
+    background-color: lightgreen;
+    font-size: 0.6rem;
+    border-radius: 2.5em;
+    padding: 4px;
+    border: 3px solid white;
+    margin: 30px auto;
+    width: 200px;
+    text-align: center;
+    height: auto;
+}
+
+#pizza {
+    background-color: lightblue;
+    font-size: 0.6rem;
+    border-radius: 2.5em;
+    padding: 4px;
+    border: 3px solid white;
+    margin: 30px auto;
+    width: 200px;
+    text-align: center;
+    height: auto;
+}
+
+#drink {
     background-color: magenta;
-      border-radius: 2.5em;
-    padding: 15px;
+    font-size: 0.6rem;
+    border-radius: 2.5em;
+    padding: 4px;
     border: 3px solid white;
     margin: 30px auto;
-    width: 90%;
+    width: 200px;
     text-align: center;
-    height: 240px;
+    height: auto;
 }
+
+#foodProducts {
+    width: 50%;
+}
+
 #hamBurgersDiv {
-    
     width: 25%;
     float: left;
 }
@@ -72,14 +112,13 @@ img {
 #subsDiv {
     width: 25%;
     float: left;
-
 }
+
 #pizzasDiv {
-    
     width: 25%;
     float: left;
-
 }
+
 #drinksDiv {
     width: 25%;
     float: left;

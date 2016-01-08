@@ -1,51 +1,51 @@
 ﻿[
     {
       "id": 0,
-      "name": "Chicken Sub",
+      "name": "CHICKEN SUB",
       "size": "220g",
-      "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
+      "description": "Chicken and lettuce with sweet barbecue dressing",
       "price": 19.90
     },
     {
       "id": 1,
-      "name": "Mexican Sub",
+      "name": "MEXICAN SUB",
       "size": "220g",
-      "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
+      "description": "Mexican with hot chili spices!",
       "price": 19.90
     },
     {
       "id": 2,
-      "name": "Italian Sub",
+      "name": "ITALIAN SUB",
       "size": "220g",
-      "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
+      "description": "Italian style sub, served with white carlic dressing",
       "price": 19.90
     },
     {
       "id": 3,
-      "name": "Ham & Cheese Sub",
+      "name": "HAM&CHEESE SUB",
       "size": "220g",
-      "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
+      "description": "Ham, cheese, lettuce and mayo dressing",
       "price": 19.90
     },
     {
       "id": 4,
-      "name": "Vegeterian Sub",
+      "name": "VEGIE SUB",
       "size": "200g",
-      "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
+      "description": "Goat cheese, blue cheese, mayo, lettuce, tomato & red onion",
       "price": 19.90
     },
     {
       "id": 5,
-      "name": "Kebab Sub",
+      "name": "KEBAB SUB",
       "size": "220g",
-      "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
+      "description": "Kebab meat, white carlic dressing, lettuce, tomato & red onion",
       "price": 19.90
     },
     {
       "id": 6,
-      "name": "LCHF sub",
+      "name": "LOW-CARB SUB",
       "size": "220g",
-      "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
+      "description": "Bread baked with special flour with low carbs, with tasty ham, eggs and cheese",
       "price": 19.90
     }
   ]

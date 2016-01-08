@@ -1,51 +1,51 @@
 ﻿[
   {
     "id": 0,
-    "name": "Hawaii",
+    "name": "HAWAII",
     "size": "400g",
-    "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
+    "description": "Tomato Sause, cheese, ham and pinapple",
     "price": 19.90
   },
   {
     "id": 1,
-    "name": "Calzone",
+    "name": "CALZONE",
     "size": "400g",
-    "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
+    "description": "Tomato Sause, cheese",
     "price": 19.90
   },
   {
     "id": 2,
-    "name": "Margarita",
+    "name": "MARGARITHA",
     "size": "400g",
-    "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
+    "description": "Tomato Sause, cheese",
     "price": 19.90
   },
   {
     "id": 3,
-    "name": "Caprisiossa",
+    "name": "CAPRISHOSA",
     "size": "400g",
-    "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
+    "description": "Tomato Sause, cheese",
     "price": 19.90
   },
   {
     "id": 4,
-    "name": "Kebab pizza",
+    "name": "KEBAB PIZZA",
     "size": "400g",
-    "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
+    "description": "Tomato Sause, cheese",
     "price": 19.90
   },
   {
     "id": 5,
-    "name": "Olympia Special",
+    "name": "OLYMPIA SPECIAL",
     "size": "520g",
-    "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
+    "description": "Tomato Sause, cheese",
     "price": 21.90
   },
   {
     "id": 6,
-    "name": "House Pizza",
+    "name": "HOUSE PIZZA",
     "size": "500g",
-    "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
+    "description": "Tomato Sause, cheese",
     "price": 20.90
   }
 ]

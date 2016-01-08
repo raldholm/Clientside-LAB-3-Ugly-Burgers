@@ -6,27 +6,27 @@
     <script src="Scripts/index.js"></script>
 </head>
 <body>
+    <div id="checkBoxs">
+        <h3>Menu</h3>
+        <label for="checkbox_hamburgers">Hamburgers:</label>
+        <input type="checkbox" name="checkbox_hamburgers" id="checkbox_hamburgers" checked><br>
+
+        <label for="checkbox_subs">Subs:</label>
+        <input type="checkbox" name="checkbox_subs" id="checkbox_subs" checked><br>
+
+        <label for="checkbox_pizzas">Pizzas:</label>
+        <input type="checkbox" name="checkbox_pizzas" id="checkbox_pizzas" checked><br>
+
+        <label for="checkbox_drinks">Drinks:</label>
+        <input type="checkbox" name="checkbox_drinks" id="checkbox_drinks" checked>
+    </div>
 <div id="searchArea">
-    <p>Search for food or drinks here.</p>
-    <label for="search">Please enter desired food or drink:</label>
+    <h3>Search for food or drinks here.</h3>
+    <label for="search">Enter food/drink: </label>
     <input type="search" name="search" id="search" placeholder="Feed me!"/>
-    <div id="update"></div>
 </div>
-<div id="checkBoxs">
-    <h2>Menu</h2>
-    <label for="checkbox_hamburgers">Hamburgers:</label>
-    <input type="checkbox" name="checkbox_hamburgers" id="checkbox_hamburgers" checked><br>
-
-    <label for="checkbox_subs">Subs:</label>
-    <input type="checkbox" name="checkbox_subs" id="checkbox_subs" checked><br>
-
-    <label for="checkbox_pizzas">Pizzas:</label>
-    <input type="checkbox" name="checkbox_pizzas" id="checkbox_pizzas" checked><br>
-
-    <label for="checkbox_drinks">Drinks:</label>
-    <input type="checkbox" name="checkbox_drinks" id="checkbox_drinks" checked><br>
-</div>
-
+<div id="searchResults"> </div>
+  
 <div id="foodProducts">  
     <div id="hamBurgersDiv"></div>
     <div id="subsDiv"></div>

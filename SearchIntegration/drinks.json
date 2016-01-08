@@ -1,49 +1,49 @@
 ﻿[
   {
     "id": 0,
-    "name": "Beer",
+    "name": "BEER",
     "size": "50cl",
     "description": "A bootle of great lager beer from Carlsberg",
     "price": 9.90
   },
   {
     "id": 1,
-    "name": "White wine",
+    "name": "WHITE WINE",
     "size": "25cl",
     "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
     "price": 11.90
   },
   {
     "id": 2,
-    "name": "Red wine",
+    "name": "RED WINE",
     "size": "25cl",
     "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
     "price": 11.90
   },
   {
     "id": 3,
-    "name": "Tequila shot",
+    "name": "TEQUILA SHOT",
     "size": "6cl",
     "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
     "price": 4.90
   },
   {
     "id": 4,
-    "name": "Whiskey",
+    "name": "WHISKEY",
     "size": "12cl",
     "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
     "price": 13.90
   },
   {
     "id": 5,
-    "name": "Bottled Water",
+    "name": "BOTTLED WATER",
     "size": "50cl",
     "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
     "price": 1.90
   },
   {
     "id": 6,
-    "name": "Glas of milk",
+    "name": "GLAS OF MILK",
     "size": "40cl",
     "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
     "price": 2.90
