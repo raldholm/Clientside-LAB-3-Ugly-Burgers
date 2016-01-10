@@ -109,7 +109,11 @@
         searchDrinks(output,drinksData, searchField, meExp);
         output += "";
     });
-    
+
+    // CLEAR SEARCHRESULTS WHEN DELETED TEXT -- NOT DONE
+    //if ($("#search").val()) {
+    //    $("#searchResults").val("enter text");
+    //};
 });
 //SEARCH HAMBURGERS
 function searchHamburgers(output,hamburgerData, searchField, meExp) {
@@ -124,6 +128,7 @@ function searchHamburgers(output,hamburgerData, searchField, meExp) {
             output += "<p>" + "Price: " + val.price.toFixed(2) + " </p>";
             output += "</div>";
         }
+        //$('.searchedItem').append(output);
         $("#searchResults").html(output);
     });
 }
@@ -140,6 +145,7 @@ function searchSubs(output,subsData, searchField, meExp) {
             output += "<p>" + "Price: " + val.price.toFixed(2) + " </p>";
             output += "</div>";
         }
+        //$('.searchedItem').append(output);
         $("#searchResults").append(output);
     });
 }
