@@ -109,12 +109,23 @@
     $("#search").keyup(function () {
         var searchField = $("#search").val();
         var meExp = new RegExp(searchField, "i");
-        var output = "";
-        searchHamburgers(output, hamburgerData, searchField, meExp);
-        searchSubs(output,subsData, searchField, meExp);
-        searchPizzas(output,pizzaData, searchField, meExp);
-        searchDrinks(output,drinksData, searchField, meExp);
-        output += "";
+
+        var hamburgerOutput = "";
+        searchHamburgers(hamburgerOutput, hamburgerData, searchField, meExp);
+        //$(this).after(hamburgerOutput);
+        hamburgerOutput += "";
+        var subsOutput = "";
+        searchSubs(subsOutput, subsData, searchField, meExp);
+        subsOutput += "";
+
+        var pizzasOutput = "";
+        searchPizzas(pizzasOutput, pizzaData, searchField, meExp);
+        pizzasOutput += "";
+
+        var drinksOutput = "";
+        searchDrinks(drinksOutput, drinksData, searchField, meExp);
+        drinksOutput += "";
+
     });
 
     // CLEAR SEARCHRESULTS WHEN DELETED TEXT -- NOT DONE
@@ -123,70 +134,71 @@
     //};
 });
 //SEARCH HAMBURGERS
-function searchHamburgers(output,hamburgerData, searchField, meExp) {
+function searchHamburgers(hamburgerOutput, hamburgerData, searchField, meExp) {
     
     $.each(hamburgerData, function (key, val) {
         if ((val.name.search(meExp) !== -1) ||
             (val.description.search(meExp) !== -1)) {
-            output += "<div id='searchedItem'>";
-            output += "<p>" + "<b>" + val.name + "</b>" + "</p>";
-            output += "<p>" + "Description: " + val.description + " </p>";
-            output += "<p>" + "Size: " + val.size + " </p>";
-            output += "<p>" + "Price: " + val.price.toFixed(2) + " </p>";
-            output += "</div>";
+            hamburgerOutput += "<div id='searchedItem'>";
+            hamburgerOutput += "<p>" + "<b>" + val.name + "</b>" + "</p>";
+            hamburgerOutput += "<p>" + "Description: " + val.description + " </p>";
+            hamburgerOutput += "<p>" + "Size: " + val.size + " </p>";
+            hamburgerOutput += "<p>" + "Price: " + val.price.toFixed(2) + " </p>";
+            hamburgerOutput += "</div>";
         }
         //$('.searchedItem').append(output);
-        $("#searchResults").html(output);
+        
+        $("#searchResults").append(hamburgerOutput);
     });
 }
 //SEARCH SUBS
-function searchSubs(output,subsData, searchField, meExp) {
+function searchSubs(subsOutput, subsData, searchField, meExp) {
     
     $.each(subsData, function (key, val) {
         if ((val.name.search(meExp) !== -1) ||
             (val.description.search(meExp) !== -1)) {
-            output += "<div id='searchedItem'>";
-            output += "<p>" + "<b>" + val.name + "</b>" + "</p>";
-            output += "<p>" + "Description: " + val.description + " </p>";
-            output += "<p>" + "Size: " + val.size + " </p>";
-            output += "<p>" + "Price: " + val.price.toFixed(2) + " </p>";
-            output += "</div>";
+            subsOutput += "<div id='searchedItem'>";
+            subsOutput += "<p>" + "<b>" + val.name + "</b>" + "</p>";
+            subsOutput += "<p>" + "Description: " + val.description + " </p>";
+            subsOutput += "<p>" + "Size: " + val.size + " </p>";
+            subsOutput += "<p>" + "Price: " + val.price.toFixed(2) + " </p>";
+            subsOutput += "</div>";
         }
         //$('.searchedItem').append(output);
-        $("#searchResults").append(output);
+        $("#searchResults").append(subsOutput);
     });
 }
 // SEARCH PIZZAS
-function searchPizzas(output,pizzaData,searchField,meExp) {
+function searchPizzas(pizzasOutput, pizzaData, searchField, meExp) {
     
     $.each(pizzaData, function(key, val) {
         if ((val.name.search(meExp) !== -1) ||
             (val.description.search(meExp) !== -1)) {
-            output += "<div id='searchedItem'>";
-            output += "<p>" + "<b>" + val.name + "</b>" + "</p>";
-            output += "<p>" + "Description: " + val.description + " </p>";
-            output += "<p>" + "Size: " + val.size + " </p>";
-            output += "<p>" + "Price: " + val.price.toFixed(2) + " </p>";
-            output += "</div>";
+            pizzasOutput += "<div id='searchedItem'>";
+            pizzasOutput += "<p>" + "<b>" + val.name + "</b>" + "</p>";
+            pizzasOutput += "<p>" + "Description: " + val.description + " </p>";
+            pizzasOutput += "<p>" + "Size: " + val.size + " </p>";
+            pizzasOutput += "<p>" + "Price: " + val.price.toFixed(2) + " </p>";
+            pizzasOutput += "</div>";
         }
 
-        $("#searchResults").append(output);
+        $("#searchResults").append(pizzasOutput);
     });
 }
 // SEARCH DRINKS
-function searchDrinks(output,drinksData, searchField, meExp) {
+function searchDrinks(drinksOutput,drinksData, searchField, meExp) {
     
     $.each(drinksData, function (key, val) {
         if ((val.name.search(meExp) !== -1) ||
             (val.description.search(meExp) !== -1)) {
-            output += "<div id='searchedItem'>";
-            output += "<p>" + "<b>" + val.name + "</b>" + "</p>";
-            output += "<p>" + "Description: " + val.description + " </p>";
-            output += "<p>" + "Size: " + val.size + " </p>";
-            output += "<p>" + "Price: " + val.price.toFixed(2) + " </p>";
-            output += "</div>";
+            drinksOutput += "<div id='searchedItem'>";
+            drinksOutput += "<p>" + "<b>" + val.name + "</b>" + "</p>";
+            drinksOutput += "<p>" + "Description: " + val.description + " </p>";
+            drinksOutput += "<p>" + "Size: " + val.size + " </p>";
+            drinksOutput += "<p>" + "Price: " + val.price.toFixed(2) + " </p>";
+            drinksOutput += "</div>";
         }
-        $("#searchResults").append(output);
+        $("#searchResults").append(drinksOutput);
     });
 }
 // GET HAMBURGERS
