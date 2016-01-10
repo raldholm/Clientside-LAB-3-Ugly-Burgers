@@ -2,6 +2,8 @@
 
     //TODO:
     //FIX CHECKBOX_BUTTONS (RELOAD METHODS WHEN UNCHECKING ( --> .addEventListener() ))
+    //$('#checkbox_hamburgers').on(':checked').addEventListener("CheckboxStateChange", function() {alert("Detta ska hända när man checkar ur")});;
+
     //FIX SEARCH FUNCTION (ONLY APPEND ONE SEARCHRESULT)
     //FIX SEARCH FUNCTION (CLEAR #searchResults WHEN DELETING INPUTED SEARCHTEXT)
     //FIX CSS
@@ -128,7 +130,8 @@
 
         // APPEND SEARCHITEMS <--- HOW TO?? USE CALLBACK??
 
-        //$("#searchResults").append(hamburgerOutput);
+        //$("#searchResults").html(hamburgerOutput.val());
+        //$("#searchResults").append(subsOutput.val());
         //$('.searchedItem').append(hamburgerOutput);
         //$(this).parent().parent().append(hamburgerOutput);
 
@@ -153,11 +156,12 @@ function searchHamburgers(hamburgerOutput, hamburgerData, searchField, meExp) {
             hamburgerOutput += "</div>";
         }
         $("#searchResults").html(hamburgerOutput);
+        //$("#searchResults").element.appendChild(hamburgerOutput);
         //$("#searchResults").append(hamburgerOutput).remove(hamburgerOutput);
         //$('.searchedItem').append(output);
         //$(this).parent().parent().append(hamburgerOutput);
         //$("#searchResults").append(hamburgerOutput);
-        //return hamburgerOutput;
+        //return hamburgerOutput.val();
     });
     
 }
@@ -175,7 +179,8 @@ function searchSubs(subsOutput, subsData, searchField, meExp) {
             subsOutput += "</div>";
         }
         //$('.searchedItem').append(output);
-        $("#searchResults").html(subsOutput);
+        //$("#searchResults").html(subsOutput);
+        //return subsOutput.val();
     });
 }
 // SEARCH PIZZAS
