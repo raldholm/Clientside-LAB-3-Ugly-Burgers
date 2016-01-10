@@ -3,49 +3,49 @@
     "id": 0,
     "name": "BEER",
     "size": "50cl",
-    "description": "A bootle of great lager beer from Carlsberg",
+    "description": "A bootle of beer made in the backyard with special ingredients by the Chef.",
     "price": 9.90
   },
   {
     "id": 1,
     "name": "WHITE WINE",
     "size": "25cl",
-    "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
+    "description": "A glass of white wine made by the famous OmpaLompas.",
     "price": 11.90
   },
   {
     "id": 2,
     "name": "RED WINE",
     "size": "25cl",
-    "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
+    "description": "A glas of red wine made of the best finnish red grapes avaliable, year 1998.",
     "price": 11.90
   },
   {
     "id": 3,
     "name": "TEQUILA SHOT",
     "size": "6cl",
-    "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
+    "description": "Fluffys Special tequila.",
     "price": 4.90
   },
   {
     "id": 4,
     "name": "WHISKEY",
     "size": "12cl",
-    "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
+    "description": "A glas of the best Japanese whiskey. Label: Hiroshima. From year 1945.",
     "price": 13.90
   },
   {
     "id": 5,
     "name": "BOTTLED WATER",
     "size": "50cl",
-    "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
+    "description": "Pure water from a natural african well in Mosambique.",
     "price": 1.90
   },
   {
     "id": 6,
     "name": "GLAS OF MILK",
     "size": "40cl",
-    "description": "Handmade burger blue cheese mayo, smoked bacon, mayo, lettuce, tomato & red onion",
+    "description": "Milk from russian goat.",
     "price": 2.90
   }
 ]

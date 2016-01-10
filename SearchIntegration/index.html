@@ -6,28 +6,30 @@
     <script src="Scripts/index.js"></script>
 </head>
 <body>
-    <div id="checkBoxs">
-        <h3>Menu</h3>
-        <label for="checkbox_hamburgers">Hamburgers:</label>
-        <input type="checkbox" name="checkbox_hamburgers" id="checkbox_hamburgers" checked><br>
+    <div id="menu_wrapper">
+        <div id="checkBoxs">
+            <h3>Menu</h3>
+            <label for="checkbox_hamburgers">Hamburgers:</label>
+            <input type="checkbox" name="checkbox_hamburgers" id="checkbox_hamburgers" checked><br>
 
-        <label for="checkbox_subs">Subs:</label>
-        <input type="checkbox" name="checkbox_subs" id="checkbox_subs" checked><br>
+            <label for="checkbox_subs">Subs:</label>
+            <input type="checkbox" name="checkbox_subs" id="checkbox_subs" checked><br>
 
-        <label for="checkbox_pizzas">Pizzas:</label>
-        <input type="checkbox" name="checkbox_pizzas" id="checkbox_pizzas" checked><br>
+            <label for="checkbox_pizzas">Pizzas:</label>
+            <input type="checkbox" name="checkbox_pizzas" id="checkbox_pizzas" checked><br>
 
-        <label for="checkbox_drinks">Drinks:</label>
-        <input type="checkbox" name="checkbox_drinks" id="checkbox_drinks" checked>
+            <label for="checkbox_drinks">Drinks:</label>
+            <input type="checkbox" name="checkbox_drinks" id="checkbox_drinks" checked>
+        </div>
+        <div id="searchArea">
+            <h3>Search for food or drinks here.</h3>
+            <label for="search">Enter food/drink: </label>
+            <input type="search" name="search" id="search" placeholder="Feed me!" />
+        </div>
     </div>
-<div id="searchArea">
-    <h3>Search for food or drinks here.</h3>
-    <label for="search">Enter food/drink: </label>
-    <input type="search" name="search" id="search" placeholder="Feed me!"/>
-</div>
 <div id="searchResults"> </div>
-  
-<div id="foodProducts">  
+
+<div id="foodProducts">
     <div id="hamBurgersDiv"></div>
     <div id="subsDiv"></div>
     <div id="pizzasDiv"></div>

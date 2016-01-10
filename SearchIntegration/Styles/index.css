@@ -1,25 +1,35 @@
 ﻿body {
     background-color: lightskyblue;
     font-family: verdana;
+    
 }
 
 img {
     width: 50px;
 }
 
+#menu_wrapper
+{
+    display: inline-flex;
+    margin-bottom: 15px;
+}
 #checkBoxs {
+    position: relative;
     width: 150px;
     /*margin-left: 40%;*/
     text-align: center;
     height: auto;
     background-color: burlywood;
     border-radius: 1.5em;
-    padding: 2px;
-    margin-bottom: 15px;
-    margin-left: 10px;
+    padding: 10px;
+    
+    
+    
 }
 
 #searchArea {
+    margin-left: 15px;
+    position: relative;
     width: 150px;
     background-color: burlywood;
     width: 350px;
@@ -27,16 +37,18 @@ img {
     /*margin-left: 40%;*/
     text-align: center;
     border-radius: 1.5em;
-    padding: 1px;
-    margin-bottom: 15px;
+    padding: 10px;
+    
 }
 
 #searchResults {
     width: 1600px;
+    display: inline-table;
     border-radius: 2.5em;
-    height: 200px;
+    height: 400px;
     border: 3px solid white;
     background-color: lightyellow;
+    padding: 10px;
 }
 
 #searchedItem {
