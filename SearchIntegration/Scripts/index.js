@@ -1,12 +1,50 @@
 ﻿$(document).ready(function () {
 
     //TODO:
-    //FIX CHECKBOX_BUTTONS (RELOAD METHODS WHEN UNCHECKING ( --> .addEventListener() ))
-    //$('#checkbox_hamburgers').on(':checked').addEventListener("CheckboxStateChange", function() {alert("Detta ska hända när man checkar ur")});;
+    //FIX CHECKBOX_BUTTONS -- use.change event or click event?
 
     //FIX SEARCH FUNCTION (ONLY APPEND ONE SEARCHRESULT)
+
     //FIX SEARCH FUNCTION (CLEAR #searchResults WHEN DELETING INPUTED SEARCHTEXT)
     //FIX CSS
+    $('#checkbox_hamburgers').change(function () { alert("checkbox change event triggered") });
+
+    $('#checkbox_hamburgers').click(function () {
+        var $this = $(this);
+        // $this will contain a reference to the checkbox   
+        if ($this.is(':checked')) {
+            alert("Loaded hamburgerdata");
+        } else {
+            alert("Unloaded hamburgerdata");
+        }
+    });
+    $('#checkbox_subs').click(function () {
+        var $this = $(this);
+        // $this will contain a reference to the checkbox   
+        if ($this.is(':checked')) {
+            alert("Loaded subsdata");
+        } else {
+            alert("Unloaded subsdata");
+        }
+    });
+    $('#checkbox_pizzas').click(function () {
+        var $this = $(this);
+        // $this will contain a reference to the checkbox   
+        if ($this.is(':checked')) {
+            alert("Loaded pizzasdata");
+        } else {
+            alert("Unloaded pizzasdata");
+        }
+    });
+    $('#checkbox_drinks').click(function () {
+        var $this = $(this);
+        // $this will contain a reference to the checkbox   
+        if ($this.is(':checked')) {
+            alert("Loaded drinksdata");
+        } else {
+            alert("Unloaded drinksdata");
+        }
+    });
 
     // DECLARE FOOD-DATA TO VARIABLES
     var hamburgerData, pizzaData, subsData, drinksData;
