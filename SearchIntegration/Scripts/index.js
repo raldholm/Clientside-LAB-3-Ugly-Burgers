@@ -1,4 +1,10 @@
 ﻿$(document).ready(function () {
+
+    //TODO:
+    //FIX CHECKBOX_BUTTONS (RELOAD PAGE WHEN UNCHECKING)
+    //FIX SEARCH FUNCTION (ONLY APPEND ONE SEARCHRESULT)
+    //FIX SEARCH FUNCTION (CLEAR #searchResults WHEN DELETING INPUTED SEARCHTEXT)
+
     
     // DECLARE FOOD-DATA TO VARIABLES
     var hamburgerData, pizzaData, subsData, drinksData;
