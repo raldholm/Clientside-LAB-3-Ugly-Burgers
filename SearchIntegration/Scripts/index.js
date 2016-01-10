@@ -1,12 +1,11 @@
 ﻿$(document).ready(function () {
 
     //TODO:
-    //FIX CHECKBOX_BUTTONS (RELOAD PAGE WHEN UNCHECKING)
+    //FIX CHECKBOX_BUTTONS (RELOAD METHODS WHEN UNCHECKING ( --> .addEventListener() ))
     //FIX SEARCH FUNCTION (ONLY APPEND ONE SEARCHRESULT)
     //FIX SEARCH FUNCTION (CLEAR #searchResults WHEN DELETING INPUTED SEARCHTEXT)
     //FIX CSS
 
-    
     // DECLARE FOOD-DATA TO VARIABLES
     var hamburgerData, pizzaData, subsData, drinksData;
     // GETJSON
@@ -114,17 +113,24 @@
         searchHamburgers(hamburgerOutput, hamburgerData, searchField, meExp);
         //$(this).after(hamburgerOutput);
         hamburgerOutput += "";
-        var subsOutput = "";
-        searchSubs(subsOutput, subsData, searchField, meExp);
-        subsOutput += "";
 
-        var pizzasOutput = "";
-        searchPizzas(pizzasOutput, pizzaData, searchField, meExp);
-        pizzasOutput += "";
+        //var subsOutput = "";
+        //searchSubs(subsOutput, subsData, searchField, meExp);
+        //subsOutput += "";
 
-        var drinksOutput = "";
-        searchDrinks(drinksOutput, drinksData, searchField, meExp);
-        drinksOutput += "";
+        //var pizzasOutput = "";
+        //searchPizzas(pizzasOutput, pizzaData, searchField, meExp);
+        //pizzasOutput += "";
+
+        //var drinksOutput = "";
+        //searchDrinks(drinksOutput, drinksData, searchField, meExp);
+        //drinksOutput += "";
+
+        // APPEND SEARCHITEMS <--- HOW TO?? USE CALLBACK??
+
+        //$("#searchResults").append(hamburgerOutput);
+        //$('.searchedItem').append(hamburgerOutput);
+        //$(this).parent().parent().append(hamburgerOutput);
 
     });
 
@@ -146,10 +152,14 @@ function searchHamburgers(hamburgerOutput, hamburgerData, searchField, meExp) {
             hamburgerOutput += "<p>" + "Price: " + val.price.toFixed(2) + " </p>";
             hamburgerOutput += "</div>";
         }
+        $("#searchResults").html(hamburgerOutput);
+        //$("#searchResults").append(hamburgerOutput).remove(hamburgerOutput);
         //$('.searchedItem').append(output);
-        
-        $("#searchResults").append(hamburgerOutput);
+        //$(this).parent().parent().append(hamburgerOutput);
+        //$("#searchResults").append(hamburgerOutput);
+        //return hamburgerOutput;
     });
+    
 }
 //SEARCH SUBS
 function searchSubs(subsOutput, subsData, searchField, meExp) {
@@ -165,7 +175,7 @@ function searchSubs(subsOutput, subsData, searchField, meExp) {
             subsOutput += "</div>";
         }
         //$('.searchedItem').append(output);
-        $("#searchResults").append(subsOutput);
+        $("#searchResults").html(subsOutput);
     });
 }
 // SEARCH PIZZAS
@@ -182,7 +192,7 @@ function searchPizzas(pizzasOutput, pizzaData, searchField, meExp) {
             pizzasOutput += "</div>";
         }
 
-        $("#searchResults").append(pizzasOutput);
+        $("#searchResults").html(pizzasOutput);
     });
 }
 // SEARCH DRINKS
@@ -198,7 +208,8 @@ function searchDrinks(drinksOutput,drinksData, searchField, meExp) {
             drinksOutput += "<p>" + "Price: " + val.price.toFixed(2) + " </p>";
             drinksOutput += "</div>";
         }
-        $("#searchResults").append(drinksOutput);
+        $("#searchResults").html(drinksOutput);
+        
     });
 }
 // GET HAMBURGERS
