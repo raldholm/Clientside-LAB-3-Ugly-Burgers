@@ -2,7 +2,6 @@
     
     // DECLARE FOOD-DATA TO VARIABLES
     var hamburgerData, pizzaData, subsData, drinksData;
-
     // GETJSON
     $.when(
         $.getJSON("hamburgers.json", function (data) {
@@ -16,9 +15,9 @@
          }),
           $.getJSON("drinks.json", function (data) {
               drinksData = data;
-          })
-           // IF GETJSON OF HAMBURGERSS IS OK AND CHECKBOX_HAMBURGERS IS CHECKED, THEN WRITE TO DIV
+          })  
           ).then(function () {
+              // IF GETJSON OF HAMBURGERS IS OK AND CHECKBOX_HAMBURGERS IS CHECKED, THEN WRITE TO DIV
               if (hamburgerData && $('#checkbox_hamburgers').is(':checked')) {
                   var output = "";
                   $.each(hamburgerData, function (key, val) {
@@ -99,6 +98,7 @@
                   $("#drinksDiv").html("<p>" + "DATA NOT LOADED." + "</p>");
               }
           });
+    // SEARCH FUNCTION
     $("#search").keyup(function () {
         var searchField = $("#search").val();
         var meExp = new RegExp(searchField, "i");
