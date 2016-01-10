@@ -102,18 +102,18 @@
     $("#search").keyup(function () {
         var searchField = $("#search").val();
         var meExp = new RegExp(searchField, "i");
-
-        searchHamburgers(hamburgerData, searchField, meExp);
-        searchSubs(subsData, searchField, meExp);
-        searchPizzas(pizzaData, searchField, meExp);
-        searchDrinks(drinksData, searchField, meExp);
+        var output = "";
+        searchHamburgers(output, hamburgerData, searchField, meExp);
+        searchSubs(output,subsData, searchField, meExp);
+        searchPizzas(output,pizzaData, searchField, meExp);
+        searchDrinks(output,drinksData, searchField, meExp);
+        output += "";
     });
     
 });
-
 //SEARCH HAMBURGERS
-function searchHamburgers(hamburgerData, searchField, meExp) {
-    var output = "";
+function searchHamburgers(output,hamburgerData, searchField, meExp) {
+    
     $.each(hamburgerData, function (key, val) {
         if ((val.name.search(meExp) !== -1) ||
             (val.description.search(meExp) !== -1)) {
@@ -124,14 +124,12 @@ function searchHamburgers(hamburgerData, searchField, meExp) {
             output += "<p>" + "Price: " + val.price.toFixed(2) + " </p>";
             output += "</div>";
         }
-        output += "";
-
-        $("#searchResults").append(output);
+        $("#searchResults").html(output);
     });
 }
 //SEARCH SUBS
-function searchSubs(subsData, searchField, meExp) {
-    var output = "";
+function searchSubs(output,subsData, searchField, meExp) {
+    
     $.each(subsData, function (key, val) {
         if ((val.name.search(meExp) !== -1) ||
             (val.description.search(meExp) !== -1)) {
@@ -142,14 +140,12 @@ function searchSubs(subsData, searchField, meExp) {
             output += "<p>" + "Price: " + val.price.toFixed(2) + " </p>";
             output += "</div>";
         }
-        output += "";
-
         $("#searchResults").append(output);
     });
 }
 // SEARCH PIZZAS
-function searchPizzas(pizzaData,searchField,meExp) {
-    var output = "";
+function searchPizzas(output,pizzaData,searchField,meExp) {
+    
     $.each(pizzaData, function(key, val) {
         if ((val.name.search(meExp) !== -1) ||
             (val.description.search(meExp) !== -1)) {
@@ -160,14 +156,13 @@ function searchPizzas(pizzaData,searchField,meExp) {
             output += "<p>" + "Price: " + val.price.toFixed(2) + " </p>";
             output += "</div>";
         }
-        output += "";
 
         $("#searchResults").append(output);
     });
 }
 // SEARCH DRINKS
-function searchDrinks(drinksData, searchField, meExp) {
-    var output = "";
+function searchDrinks(output,drinksData, searchField, meExp) {
+    
     $.each(drinksData, function (key, val) {
         if ((val.name.search(meExp) !== -1) ||
             (val.description.search(meExp) !== -1)) {
@@ -178,12 +173,9 @@ function searchDrinks(drinksData, searchField, meExp) {
             output += "<p>" + "Price: " + val.price.toFixed(2) + " </p>";
             output += "</div>";
         }
-        output += "";
-
         $("#searchResults").append(output);
     });
 }
-
 // GET HAMBURGERS
 function getAllHamburgers() {
     $.getJSON('hamburgers.json', function (data) {
