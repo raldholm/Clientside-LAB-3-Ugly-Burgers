@@ -1,4 +1,6 @@
 ﻿$(document).ready(function () {
+    // DECLARE FOOD-DATA TO VARIABLES
+    var hamburgerData, pizzaData, subsData, drinksData;
 
     //TODO:
     //FIX CHECKBOX_BUTTONS -- use.change event or click event?
@@ -7,47 +9,7 @@
 
     //FIX SEARCH FUNCTION (CLEAR #searchResults WHEN DELETING INPUTED SEARCHTEXT)
     //FIX CSS
-    $('#checkbox_hamburgers').change(function () { alert("checkbox change event triggered") });
-
-    $('#checkbox_hamburgers').click(function () {
-        var $this = $(this);
-        // $this will contain a reference to the checkbox   
-        if ($this.is(':checked')) {
-            alert("Loaded hamburgerdata");
-        } else {
-            alert("Unloaded hamburgerdata");
-        }
-    });
-    $('#checkbox_subs').click(function () {
-        var $this = $(this);
-        // $this will contain a reference to the checkbox   
-        if ($this.is(':checked')) {
-            alert("Loaded subsdata");
-        } else {
-            alert("Unloaded subsdata");
-        }
-    });
-    $('#checkbox_pizzas').click(function () {
-        var $this = $(this);
-        // $this will contain a reference to the checkbox   
-        if ($this.is(':checked')) {
-            alert("Loaded pizzasdata");
-        } else {
-            alert("Unloaded pizzasdata");
-        }
-    });
-    $('#checkbox_drinks').click(function () {
-        var $this = $(this);
-        // $this will contain a reference to the checkbox   
-        if ($this.is(':checked')) {
-            alert("Loaded drinksdata");
-        } else {
-            alert("Unloaded drinksdata");
-        }
-    });
-
-    // DECLARE FOOD-DATA TO VARIABLES
-    var hamburgerData, pizzaData, subsData, drinksData;
+   
     // GETJSON
     $.when(
         $.getJSON("hamburgers.json", function (data) {
@@ -144,6 +106,101 @@
                   $("#drinksDiv").html("<p>" + "DATA NOT LOADED." + "</p>");
               }
           });
+    // LOAD/UNLOAD WHEN CHECKBOX IS CLICKED
+    $('#checkbox_hamburgers').click(function () {
+        var $this = $(this);
+        // $this will contain a reference to the checkbox   
+        if ($this.is(':checked')) {
+            $.getJSON("hamburgers.json", function (data) { hamburgerData = data; });
+            var output = "";
+            $.each(hamburgerData, function (key, val) {
+                output += "<div id='hamburger'>";
+                output += "<p>" + "<b>" + val.name + "</b>";
+                output += "<p>" + "Description: " + val.description + " </p>";
+                output += "<img src='Images/Hamburger.png'";
+                output += '"alt="' + val.name + '"' + '"/>';
+                output += "<p>" + "Size: " + val.size + " </p>";
+                output += "<p>" + "Price: " + val.price.toFixed(2) + " </p>";
+                output += "</div>";
+            });
+            output += "";
+            $("#hamBurgersDiv").html(output);
+            
+        } else {
+            $("#hamBurgersDiv").html("<p>" + "DATA NOT LOADED." + "</p>");
+        }
+    });
+    // LOAD/UNLOAD WHEN CHECKBOX IS CLICKED
+    $('#checkbox_subs').click(function () {
+        var $this = $(this);
+        // $this will contain a reference to the checkbox   
+        if ($this.is(':checked')) {
+            $.getJSON("subs.json", function (data) {
+                subsData = data;
+            });
+            var output3 = "";
+            $.each(subsData, function (key, val) {
+                output3 += "<div id='sub'>";
+                output3 += "<p>" + "<b>" + val.name + "</b>";
+                output3 += "<p>" + "Description: " + val.description + " </p>";
+                output3 += "<img src='Images/Subs.PNG'";
+                output3 += '"alt="' + val.name + '"' + '"/>';
+                output3 += "<p>" + "Size: " + val.size + " </p>";
+                output3 += "<p>" + "Price: " + val.price.toFixed(2) + " </p>";
+                output3 += "</div>";
+            });
+            output3 += "";
+            $("#subsDiv").html(output3);
+        } else {
+            $("#subsDiv").html("<p>" + "DATA NOT LOADED." + "</p>");
+        }
+    });
+    // LOAD/UNLOAD WHEN CHECKBOX IS CLICKED
+    $('#checkbox_pizzas').click(function () {
+        var $this = $(this);
+        // $this will contain a reference to the checkbox   
+        if ($this.is(':checked')) {
+            $.getJSON("pizzas.json", function (data) { pizzaData = data; });
+            var output2 = "";
+            $.each(pizzaData, function (key, val) {
+                output2 += "<div id='pizza'>";
+                output2 += "<p>" + "<b>" + val.name + "</b>";
+                output2 += "<p>" + "Description: " + val.description + " </p>";
+                output2 += "<img src='Images/Pizza.png'";
+                output2 += '"alt="' + val.name + '"' + '"/>';
+                output2 += "<p>" + "Size: " + val.size + " </p>";
+                output2 += "<p>" + "Price: " + val.price.toFixed(2) + " </p>";
+                output2 += "</div>";
+            });
+            output2 += "";
+            $("#pizzasDiv").html(output2);
+        } else {
+            $("#pizzasDiv").html("<p>" + "DATA NOT LOADED." + "</p>");
+        }
+    });
+    // LOAD/UNLOAD WHEN CHECKBOX IS CLICKED
+    $('#checkbox_drinks').click(function () {
+        var $this = $(this);
+        // $this will contain a reference to the checkbox   
+        if ($this.is(':checked')) {
+            $.getJSON("drinks.json", function (data) { drinksData = data; });
+            var output4 = "";
+            $.each(drinksData, function (key, val) {
+                output4 += "<div id='drink'>";
+                output4 += "<p>" + "<b>" + val.name + "</b>";
+                output4 += "<p>" + "Description: " + val.description + " </p>";
+                output4 += "<img src='Images/Drink.png'";
+                output4 += '"alt="' + val.name + '"' + '"/>';
+                output4 += "<p>" + "Size: " + val.size + " </p>";
+                output4 += "<p>" + "Price: " + val.price.toFixed(2) + " </p>";
+                output4 += "</div>";
+            });
+            output4 += "";
+            $("#drinksDiv").html(output4);
+        } else {
+            $("#drinksDiv").html("<p>" + "DATA NOT LOADED." + "</p>");
+        }
+    });
     // SEARCH FUNCTION
     $("#search").keyup(function () {
         var searchField = $("#search").val();
@@ -151,20 +208,19 @@
 
         var hamburgerOutput = "";
         searchHamburgers(hamburgerOutput, hamburgerData, searchField, meExp);
-        //$(this).after(hamburgerOutput);
         hamburgerOutput += "";
 
-        //var subsOutput = "";
-        //searchSubs(subsOutput, subsData, searchField, meExp);
-        //subsOutput += "";
+        var subsOutput = "";
+        searchSubs(subsOutput, subsData, searchField, meExp);
+        subsOutput += "";
 
-        //var pizzasOutput = "";
-        //searchPizzas(pizzasOutput, pizzaData, searchField, meExp);
-        //pizzasOutput += "";
+        var pizzasOutput = "";
+        searchPizzas(pizzasOutput, pizzaData, searchField, meExp);
+        pizzasOutput += "";
 
-        //var drinksOutput = "";
-        //searchDrinks(drinksOutput, drinksData, searchField, meExp);
-        //drinksOutput += "";
+        var drinksOutput = "";
+        searchDrinks(drinksOutput, drinksData, searchField, meExp);
+        drinksOutput += "";
 
         // APPEND SEARCHITEMS <--- HOW TO?? USE CALLBACK??
 
@@ -216,9 +272,7 @@ function searchSubs(subsOutput, subsData, searchField, meExp) {
             subsOutput += "<p>" + "Price: " + val.price.toFixed(2) + " </p>";
             subsOutput += "</div>";
         }
-        //$('.searchedItem').append(output);
-        //$("#searchResults").html(subsOutput);
-        //return subsOutput.val();
+        $("#searchResults").append(subsOutput);
     });
 }
 // SEARCH PIZZAS
@@ -234,13 +288,11 @@ function searchPizzas(pizzasOutput, pizzaData, searchField, meExp) {
             pizzasOutput += "<p>" + "Price: " + val.price.toFixed(2) + " </p>";
             pizzasOutput += "</div>";
         }
-
-        $("#searchResults").html(pizzasOutput);
+        $("#searchResults").append(pizzasOutput);
     });
 }
 // SEARCH DRINKS
-function searchDrinks(drinksOutput,drinksData, searchField, meExp) {
-    
+function searchDrinks(drinksOutput,drinksData, searchField, meExp) { 
     $.each(drinksData, function (key, val) {
         if ((val.name.search(meExp) !== -1) ||
             (val.description.search(meExp) !== -1)) {
@@ -251,7 +303,7 @@ function searchDrinks(drinksOutput,drinksData, searchField, meExp) {
             drinksOutput += "<p>" + "Price: " + val.price.toFixed(2) + " </p>";
             drinksOutput += "</div>";
         }
-        $("#searchResults").html(drinksOutput);
+        $("#searchResults").append(drinksOutput);
         
     });
 }
@@ -434,7 +486,6 @@ function getAllHamburgersToArray() {
     });
 
 };
-
 // search Hamburgers
 function hamburgerSearch(hamburgerData,searchField){
     
@@ -453,4 +504,26 @@ function hamburgerSearch(hamburgerData,searchField){
         output += "";
     });
     return output;
+}
+// checkIfHamburgersIsloaded
+function checkIfHamburgersIsLoader(hamburgerData) {
+    if (hamburgerData) {
+        var output = "";
+        $.each(hamburgerData, function (key, val) {
+            output += "<div id='hamburger'>";
+            output += "<p>" + "<b>" + val.name + "</b>";
+            output += "<p>" + "Description: " + val.description + " </p>";
+            output += "<img src='Images/Hamburger.png'";
+            output += '"alt="' + val.name + '"' + '"/>';
+            output += "<p>" + "Size: " + val.size + " </p>";
+            output += "<p>" + "Price: " + val.price.toFixed(2) + " </p>";
+            output += "</div>";
+        });
+        output += "";
+        $("#hamBurgersDiv").append(output);
+    }
+        // IF NOT, WRITE "DATA NOT LOADED TO DIV".
+    else {
+        $("#hamBurgersDiv").html("<p>" + "DATA NOT LOADED." + "</p>");
+    }
 }
